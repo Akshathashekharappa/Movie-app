@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+    <div class="flex">
+        <img src="disney.logo.webp" alt="" class="logo">
+        <div class="subflex">
+        <input type="text" placeholder="Search trending movies..." class="search" id="moviename">
+        <button class="searchbtn" onclick="searchMovie()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+          </svg></button>
+        </div>
+    </div>
+    </div>
+
+    <div id="notfound" class="d-none">
+      <h1 class="emoji">🤯</h1>
+  <h2 class="head">Couldn't Find "<span id="namemovie"></span>"</h2>
+  <p class="para">Try searching for something else or try with a different spelling</p>
+  </div>
+  
+
+<div class="maincontainer d-none" id="found">
+  <div class="details">
+    <h1 id="title">Headding</h1>
+   <p id="plot">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem esse excepturi natus at cupiditate modi nisi. Aliquid impedit quae dignissimos.</p>
+   <p>Releasing on : <span id="release"></span></p>
+     <p>Rated : <span id="rated"></span></p>
+    <p>Genre : <span id="genre"></span></p>
+     <p>Director : <span id="director"></span></p>
+     <p>Actors : <span id="actors"></span></p>
+   <p>Language : <span id="language"></span></p>
+   <p>BoxOffice : <span id="boxoffice"></span></p>
+</div>    
+<img src="https://m.media-amazon.com/images/M/MV5BMTYzOTE2NjkxN15BMl5BanBnXkFtZTgwMDgzMTg0MzE@._V1_SX350.jpg" alt="" class="poster" id="myposter">
+</div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
